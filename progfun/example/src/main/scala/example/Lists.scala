@@ -59,7 +59,9 @@ object Lists {
         }
         
     }
-
-    loops(0, xs)
+    if (xs.isEmpty)
+        throw new NoSuchElementException
+    else
+        loops(0, xs)
   } 
 }
